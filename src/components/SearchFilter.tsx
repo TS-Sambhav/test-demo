@@ -13,7 +13,7 @@ const SearchFilter = () => {
         }}
       />
       {JsonData.filter((val)=>{
-        return (search == "") ? val : (val.first_name.toLowerCase().includes(search.toLowerCase()))
+        return (search === "") ? val : (val.first_name.toLowerCase().includes(search.toLowerCase()))
       }).map((val) => {
         return (
           <div key={val.id} className="border">
